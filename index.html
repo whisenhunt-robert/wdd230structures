@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <meta name="Description" content="This is just me following along with the Basic HTML Structure Review.">
+    <link rel="icon" type="image/png" href="https://example.com/favicon.png">
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Hello World!!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Testing</h2>
+            <p>This is just a simple test of adding a section to my page.
+                Here is the most recent image of me:<br>
+                <img src="images/me2023.jpg" alt="Me at church with my mask on."><br>
+                Do you want an easy way to plan things for your website and mark down what you've done so far?<br>
+                Click <a href="https://frontendchecklist.io/">here</a> to go to a fancy checklist website.
+            </p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 | HTML/CSS/JavaScript Structure Review | All Rights Reserved | Today's Date: <span id="currentdate"></span>
+    </footer>
+    <script src="scripts/app.js">
+        const options = {weekday: 'long', day: 'numberic', month: 'long', year: 'numberic'};
+        document.getElementById('currentdate').innerHTML = new Date().toLocaleDateString('en-US', options);
+    </script>
+</body>
+</html>
